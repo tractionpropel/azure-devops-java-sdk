@@ -84,7 +84,7 @@ public class SecurityToken {
         // Project-level namespaces and permissions
         Project("52d39943-cb85-4d7f-8fa8-c6baac873819", "$PROJECT:vstfs:///Classification/TeamProject/{PROJECT_ID}"),
         Tagging("bb50f182-8e5e-40b8-bc21-e8752a1e7ae2", "/{PROJECT_ID}"),
-        VersionControlItems("a39371cf-0841-4c16-bbd3-276e341bc052"),
+        VersionControlItems("a39371cf-0841-4c16-bbd3-276e341bc052", "$/{PROJECT_NAME}"),
 
         // Organization-level namespaces and permissions
         AuditLog("a6cc6381-a1ca-4b36-b3c1-4e65211e82b6", "/AllPermissions"),
@@ -96,9 +96,9 @@ public class SecurityToken {
 
         // Role-based namespaces and permissions
         DistributedTask("101eae8c-1709-47f9-b228-0e476c35b3ba"),
-        Environment("83d4c2e6-e57d-4d6e-892b-b87222b7ad20"),
+        Environment("83d4c2e6-e57d-4d6e-892b-b87222b7ad20", "Environments/{PROJECT_ID}/{ENVIRONMENT_ID}"),
         ExtensionManagement("5d6d7b80-3c63-4ab0-b699-b6a5910f8029"),
-        Library("b7e84409-6553-448a-bbb2-af228e07cbeb"),
+        Library("b7e84409-6553-448a-bbb2-af228e07cbeb", "Library/{PROJECT_ID}/VariableGroup/{VARIABLE_GROUP_ID}"),
         ServiceEndpoints("49b48001-ca20-4adc-8111-5b60c903a50c"),
 
         // Internal namespaces and permissions
